@@ -1,0 +1,3 @@
+vagrant_backups/
+.vagrant/
+*.box
