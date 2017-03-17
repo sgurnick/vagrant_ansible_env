@@ -74,6 +74,14 @@ The Vagrantfile in this repo defines the following VMs for this environment:
 - node2: test node2
 - node3: test node3
 
+To fit into your local Ansible environment, you'll want to edit the following line in the Vagrantfile:
+```
+ansible.vm.synced_folder "/Users/sgurnick/GIT_REPOS/ansible/", "/etc/ansible", owner: "ansible", group: "ansible"
+```
+Replacing ```/Users/sgurnick/GIT_REPOS/ansible/``` with the path to your Ansible directory on your macOS workstation.
+
+Replacing ```/etc/ansible``` with the desired path on your Ansible Vagrant node to mount your Ansible directory. 
+
 ## Create Vagrant VMs
 To create the vagrant VMs and begin using them, issue the following commands:
 ```
