@@ -53,7 +53,11 @@ Once your RHEL base server is complete and available within VirtualBox, it needs
 ```
 $ vagrant package --base name-of-vm-in-virtualbox --output name-of-resulting-box-file.box
 ```
-Example:
+Tip - if you don't know `name-of-vm-in-virtualbox` you can execute the following command to list available VMs:
+```
+$ vboxmanage list vms
+```
+Example packaging of VirtualBox VM into a Vagrant box:
 ```
 $ vagrant package --base rhel6-sandbox --output rhel6-sandbox.box
 ```
