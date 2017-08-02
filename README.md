@@ -12,8 +12,8 @@ These need to be installed or available on your macOS workstation:
 - [Homebrew](https://brew.sh/)
   - [VirtualBox](https://www.virtualbox.org/) - ```$ brew cask install virtualbox```
   - [Vagrant](https://www.vagrantup.com/) - ```$ brew cask install vagrant```
-  - Red Hat Enterprise Linux, you'll want a [free developer subscription](https://developers.redhat.com/blog/2016/03/31/no-cost-rhel-developer-subscription-now-available/).
-    - When you have this subscription you can download a RHEL6 DVD iso image.
+- Red Hat Enterprise Linux - obtain a [free developer subscription](https://developers.redhat.com/blog/2016/03/31/no-cost-rhel-developer-subscription-now-available/)
+  - When you have this subscription you can download a RHEL DVD iso image and attach entitlements to perform package installs and updates
 
 ## Create a RHEL Base Box using Kickstart Installation
 A base RHEL server needs to be installed and configured within VirtualBox.
