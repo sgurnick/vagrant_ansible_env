@@ -21,7 +21,9 @@ Vagrant.configure("2") do |config|
     ansible.vm.box = "rhel6-sandbox"
     ansible.vm.hostname = "ansible"
     ansible.vm.network "private_network", ip: "192.168.60.10"
-    ansible.vm.provision "shell", inline: $install_ansible
+    ansible.vm.provision "shell", name: "Install Ansible", inline: $install_ansible
+    ansible.vm.provision "file", source: "/Users/sgurnick/GIT_REPOS/ansible_key", destination: "/tmp/ansible_key"
+    ansible.vm.provision "shell", name: "Put ansible_key file in place", inline: "mv /tmp/ansible_key /home/ansible/ansible_key"
     ansible.vm.synced_folder "/Users/sgurnick/GIT_REPOS/ansible/", "/etc/ansible", owner: "ansible", group: "ansible"
   end
 
