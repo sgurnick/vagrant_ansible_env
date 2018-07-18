@@ -32,9 +32,11 @@ Attach the RHEL iso file to the VM's cdrom and power-on.
 
 At the install options screen, press the Tab key to modify the kernel options. Type the following:
 ```
-ks=https://raw.githubusercontent.com/sgurnick/vagrant_ansible_env/master/ks.cfg noipv6
+ks=https://raw.githubusercontent.com/sgurnick/vagrant_ansible_env/master/ks_rhel6.cfg noipv6
+or
+ks=https://raw.githubusercontent.com/sgurnick/vagrant_ansible_env/master/ks_rhel7.cfg noipv6
 ```
-Press Enter and an unattended install of RHEL6 will begin.
+Press Enter and an unattended install of RHEL6/7 will begin.
 
 When the install completes, power-down the VM, remove the RHEL iso file from the VM's cdrom drive and boot-up normally.
 
@@ -69,6 +71,8 @@ $ vagrant box add name-of-box /path/to/box/file
 Example:
 ```
 $ vagrant box add rhel6-sandbox rhel6-sandbox.box
+or
+$ vagrant box add rhel7-sandbox rhel7-sandbox.box
 ```
 
 ## Vagrantfile
