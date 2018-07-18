@@ -1,6 +1,6 @@
 # Vagrant Environment Build using Kickstart
 
-This describes a process for setting-up a local RHEL6 vagrant environment in macOS for testing Ansible using the following tools:
+This describes a process for setting-up a local RHEL6/7 vagrant environment in macOS for testing Ansible using the following tools:
 - homebrew
 - virtualbox
 - vagrant
