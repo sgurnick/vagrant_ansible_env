@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define "ansible" do |ansible|
-    ansible.vm.box = "rhel6-sandbox"
+    ansible.vm.box = "rhel7-sandbox"
     ansible.vm.hostname = "ansible"
     ansible.vm.network "private_network", ip: "192.168.60.10"
     ansible.vm.provision "shell", name: "Install Ansible", inline: $install_ansible
